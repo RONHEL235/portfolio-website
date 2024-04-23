@@ -1,36 +1,43 @@
 "use client"
 
-import React from 'react'
+import React from "react"
+import { motion } from "framer-motion"
 
 export default function About() {
   return (
-    <section className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40">
+    <motion.section 
+    className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40"
+    initial={{ opacity: 0, y: 100 }}
+    animate={{ opacity: 1, y: 0}}
+    transition={{ delay: 0.175 }}
+    >
         <h2 className="text-3xl font-medium capitalize mb-8">About me</h2>
         <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
+        After my incomplete 4 year tenure at {" "}
+        <span className="font-medium">UCT - BSc Geomatics (Land Surveying) due to financial exclusion</span>, I decided to pursue my
+        passion for programming and enrolled in a 6 months coding bootcamp called CodeSpace and learned{" "}
+        <span className="font-medium">Front-End Software development</span>.{" "}
+        </p>
+        <p>
         <span className="italic">My favorite part of programming</span> is the
         problem-solving aspect. I <span className="underline">love</span> the
         feeling of finally figuring out a solution to a problem. My core stack
         is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
+        <span className="font-medium">Tailwind CSS, JavaScript, React.js, Next.js and Node.js. </span>
+        I am also familiar with 
+        <span className="font-medium"> TypeScript and GraphQL. </span>
+        Presently I am in my first year pursuing a 
+        <span className="font-medium"> BSc in IT specializing in Software Engineering at Eduvos. </span> 
+        I am currently looking for a{" "}
+        <span className="font-medium">internship position</span> as a software
         developer.
         </p>
-        <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
+        <p className="mt-5">
+        <span className="italic">When I'm not coding</span>, I like to delve into a good fictional read and personal writing. I also love{" "}
         <span className="font-medium">learning new things</span>. I am currently
         learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
+        <span className="font-medium">philosophy and history</span>.
         </p>    
-    </section>
+    </motion.section>
   )
 }
