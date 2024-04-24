@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 export default function About() {
   return (
     <motion.section 
-    className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40"
+    className="mt-[17rem] mb-[7rem] max-w-[45rem] text-center leading-8"
     initial={{ opacity: 0, y: 100 }}
     animate={{ opacity: 1, y: 0}}
     transition={{ delay: 0.175 }}
@@ -15,7 +15,7 @@ export default function About() {
         <p className="mb-3">
         After my incomplete 4 year tenure at {" "}
         <span className="font-medium">UCT - BSc Geomatics (Land Surveying) due to financial exclusion</span>, I decided to pursue my
-        passion for programming and enrolled in a 6 months coding bootcamp called CodeSpace and learned{" "}
+        passion for programming and enrolled in a coding bootcamp called CodeSpace and learned{" "}
         <span className="font-medium">Front-End Software development</span>.{" "}
         </p>
         <p>

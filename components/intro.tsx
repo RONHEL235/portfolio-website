@@ -10,8 +10,8 @@ import { FaGithubSquare } from "react-icons/fa"
 
 export default function Intro() {
     return (
-        <section className=" absolute top-28 text-center mb-28 max-w-[50rem] sm:mb-0">
-            <div className=" flex items-center justify-center">
+        <section className="absolute top-28 text-center mb-30 max-w-[50rem]">
+            <div className="flex items-center justify-center">
                 <div className="relative">
                     <motion.div
                         initial={{ opacity: 0, scale: 0 }}
@@ -43,7 +43,7 @@ export default function Intro() {
                 building <span className="italic">sites & apps</span>. My focus is{" "}
                 <span className="underline">React (Next.js)</span>.  
             </motion.h1>
-            <motion.div className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4 text-lg font-medium"
+            <motion.div className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4 text-lg font-medium sm:mb-10"
                 initial={{ opacity: 0, y: 100 }}
                 animate={{ opacity: 1, y: 0}}
                 transition={{
