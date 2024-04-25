@@ -23,7 +23,7 @@ export default function About() {
         problem-solving aspect. I <span className="underline">love</span> the
         feeling of finally figuring out a solution to a problem. My core stack
         is{" "}
-        <span className="font-medium">Tailwind CSS, JavaScript, React.js, Next.js and Node.js. </span>
+        <span className="font-medium">Tailwind CSS, JavaScript, React.js and Node.js. </span>
         I am also familiar with 
         <span className="font-medium"> TypeScript and GraphQL. </span>
         Presently I am in my first year pursuing a 
@@ -33,10 +33,7 @@ export default function About() {
         developer.
         </p>
         <p className="mt-5">
-        <span className="italic">When I'm not coding</span>, I like to delve into a good fictional read and personal writing. I also love{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">philosophy and history</span>.
+        <span className="italic">When I'm not coding</span>, I like to delve into a good fictional read or personal writing.
         </p>    
     </motion.section>
   )
