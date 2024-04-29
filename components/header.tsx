@@ -7,7 +7,6 @@ import Link from "next/link"
 import clsx from "clsx"
 
 export default function Header() {
-    const [activeSection, setActiveSection] = useState("Home")
 
     return (
         <header className="z-[999] relative">
@@ -36,7 +35,7 @@ export default function Header() {
                                 transition={{
                                     type: "spring",
                                     stiffness: 380,
-                                    damping: 30,
+                                    damping: 30,  
                                 }}
                                 ></motion.span>
                             )} 

@@ -4,6 +4,8 @@ import React from "react"
 import { motion } from "framer-motion"
 
 export default function About() {
+
+
   return (
     <motion.section 
     className="mt-[17rem] mb-[7rem] max-w-[45rem] text-center leading-8 scroll-mt-28"
