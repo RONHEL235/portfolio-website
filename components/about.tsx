@@ -6,14 +6,16 @@ import { useInView } from "react-intersection-observer"
 import { useActiveSectionContext } from "@/context/active-section-context"
 
 export default function About() {
-  const { ref, inView } = useInView()
+  const { ref, inView } = useInView({
+    threshold: 0.99,
+  })
   const { setActiveSection } = useActiveSectionContext()
 
   useEffect(() => {
     if (inView) {
     setActiveSection("About")
   }
-}) 
+}, [inView, setActiveSection]) 
 
   return (
     <motion.section 
@@ -42,11 +44,10 @@ export default function About() {
         Presently I am in my first year pursuing a 
         <span className="font-medium"> BSc in IT specializing in Software Engineering at Eduvos. </span> 
         I am currently looking for a{" "}
-        <span className="font-medium">internship position</span> as a software
-        developer.
+        <span className="font-medium">internship position as a Front-End software developer.</span>
         </p>
         <p className="mt-5">
-        <span className="italic">When I'm not coding</span>, I like to delve into a good fictional read or personal writing.
+        <span className="italic">When I'm not coding</span>, I like to delve into a good fictional read or personal writing. I love learning, and presently I am learning about philosophy and history. 
         </p>    
     </motion.section>
   )
