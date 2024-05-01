@@ -1,6 +1,7 @@
 import Intro from "@/components/intro"
 import About from "@/components/about"
 import Projects from "@/components/projects"
+import Skills from "@/components/skills"
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Intro />
       <About />
       <Projects />
+      <Skills />
     </main>
   )
 }
