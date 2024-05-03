@@ -12,8 +12,7 @@ export default function Experience() {
         <div className="text-3xl font-medium capitalize mb-8 text-center">Experience</div>
         <VerticalTimeline>
             {experiencesData.map((item, index) => (
-                <React.Fragment key={index}>
-                    
+                <React.Fragment key={index}>            
                     <VerticalTimelineElement
                     visible={true}
                     contentStyle={{
