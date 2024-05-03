@@ -4,11 +4,16 @@ import React from 'react'
 import { experiencesData } from '@/lib/data'
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component"
 import "react-vertical-timeline-component/style.min.css"
+import { useSectionInView } from '@/lib/hooks'
 
 export default function Experience() {
+    const {ref } = useSectionInView("Experience", 0.65)
+
   return (
     <section 
-        id="experience" >
+        ref={ref}
+        id="experience"
+        className="scroll-mt-28 mb-28 sm:mb-40">
         <div className="text-3xl font-medium capitalize mb-8 text-center">Experience</div>
         <VerticalTimeline>
             {experiencesData.map((item, index) => (
