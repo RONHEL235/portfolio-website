@@ -28,7 +28,7 @@ export default function Intro() {
                         }}
                     >
                         <Image 
-                        src="/Profile.jpg" 
+                        src="/Profile_Head.jpg" 
                         alt="Ronee Helepi Potrait"
                         width="150"
                         height="150"
