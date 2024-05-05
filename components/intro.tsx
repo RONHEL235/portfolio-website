@@ -8,10 +8,11 @@ import { BsArrowRight, BsLinkedin } from "react-icons/bs"
 import { HiDownload } from "react-icons/hi"
 import { FaGithubSquare } from "react-icons/fa"
 import { useSectionInView } from "@/lib/hooks"
+import { useActiveSectionContext } from "@/context/active-section-context"
 
 export default function Intro() {
     const {ref } = useSectionInView("Home", 0.99)
-
+    const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext()
     return (
         <section
         ref={ref}
@@ -60,7 +61,11 @@ export default function Intro() {
                 className="group bg-gray-800 text-white px-7 py-3 flex items-center gap-2 outline-none
                 focus:scale-110 hover:scale-110
                 hover:bg-gray-800 active:scale-105
-                transition">
+                transition"
+                onClick={() => {
+                    setActiveSection("Contact")
+                    setTimeOfLastClick(Date.now())
+                }}>
                     Contact me here <BsArrowRight 
                     className="opacity-70 group-hover:translate-x-1 transition"/>
                 </Link>
@@ -68,7 +73,7 @@ export default function Intro() {
                 focus:scale-110 hover:scale-110
                 active:scale-105
                 transition
-                cursor-pointer border border-black/50"
+                cursor-pointer borderBlack"
                 href="/CV.pdf" download={true}>
                     Download CV <HiDownload
                     className="opacity-60"
@@ -77,14 +82,14 @@ export default function Intro() {
                 <a className="bg-white p-4 text-gray-800 flex items-center gap-2 focus:scale-110 hover:scale-110
                 active:scale-105
                 transition
-                cursor-pointer border border-black/50"
+                cursor-pointer borderBlack"
                 href="https://linkedin.com" target="_blank">
                     <BsLinkedin/>
                 </a>
                 <a className="bg-white p-4 text-gray-800 flex items-center gap-2 text-[1.3rem] focus:scale-110 hover:scale-110
                 active:scale-105
                 transition
-                cursor-pointer border border-black/50"
+                cursor-pointer borderBlack"
                 href="https://github.com" target="_blank">
                     <FaGithubSquare/>
                 </a>
