@@ -46,7 +46,7 @@ export const experiencesData = [
     title: "Graduated CodeSpace Bootcamp",
     location: "Cape Town",
     description:
-      "Graduated after 6 months/ 500 hours of comprehensive Front-End Software Development program.",
+      "Graduated after 6 months/ 500 hours of a comprehensive Front-End Software Development program.",
     icon: React.createElement(LuGraduationCap),
     date: "2023",
   },

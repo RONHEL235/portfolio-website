@@ -30,9 +30,9 @@ export default function About() {
         is{" "}
         <span className="font-medium">Tailwind CSS, JavaScript, React.js and Node.js. </span>
         I am also familiar with 
-        <span className="font-medium"> TypeScript and GraphQL. </span>
+        <span className="font-medium"> TypeScript. </span>
         Presently I am in my first year pursuing a 
-        <span className="font-medium"> BSc in IT specializing in Software Engineering at Eduvos. </span> 
+        <span className="font-medium"> BSc in IT specializing in Software Engineering at EDUVOS. </span> 
         I am currently looking for a{" "}
         <span className="font-medium">internship position as a Front-End software developer.</span>
         </p>
