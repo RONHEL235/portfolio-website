@@ -35,10 +35,6 @@ export default function Contact() {
     <form 
       className="mt-10 flex flex-col"
       action={async (formData) => {
-      console.log("Running on client")  
-      console.log(formData.get("senderEmail"))
-      console.log(formData.get("message"))
-
       await sendEmail(formData)
     }}>
       <input 
@@ -54,7 +50,7 @@ export default function Contact() {
       name="message"
       placeholder="Your message"
       required={true}
-      maxLength={500} 
+      maxLength={5000} 
     />
       <button 
         className="group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all
