@@ -1,15 +1,9 @@
 "use server"
 
+import { validateString } from "@/lib/utils"
 import { Resend } from "resend"
 
 const resend = new Resend(process.env.RESEND_API_KEY)
-
-const validateString = (value: unknown, maxLength: number) => {
-  if (!value || typeof value !== "string" || value.length > maxLength) {
-    return false
-  }
-  return true
-}
 
 export const sendEmail = async (formData: FormData) => {
   const senderEmail = formData.get("email")
@@ -31,7 +25,7 @@ export const sendEmail = async (formData: FormData) => {
       from: "onboarding@resend.dev",
       to: "roneehelepi70@gmail.com",
       subject: "Message from contact form",
-      reply_to: senderEmail,
-      text: message,
+      reply_to: senderEmail as string,
+      text: message as string,
     })
   }
