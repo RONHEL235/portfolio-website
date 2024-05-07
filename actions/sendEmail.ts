@@ -1,12 +1,12 @@
 "use server"
 
-import { validateString } from "@/lib/utils"
+import { validateString, getErrorMessage } from "@/lib/utils"
 import { Resend } from "resend"
 
 const resend = new Resend(process.env.RESEND_API_KEY)
 
 export const sendEmail = async (formData: FormData) => {
-  const senderEmail = formData.get("email")
+  const senderEmail = formData.get("senderEmail")
   const message = formData.get("message")
 
   //simple server-side validation 
@@ -19,13 +19,19 @@ export const sendEmail = async (formData: FormData) => {
     return {
       error: "Invalid message"
     }
-  }
+  } 
 
-    resend.emails.send({
-      from: "onboarding@resend.dev",
+  try {
+    await resend.emails.send({
+      from: "Contact Form <onboarding@resend.dev>",
       to: "roneehelepi70@gmail.com",
       subject: "Message from contact form",
       reply_to: senderEmail as string,
       text: message as string,
     })
-  }
+  } catch (error: unknown) {
+    return {
+      error: getErrorMessage(error),
+    }
+  } 
+}
