@@ -58,9 +58,9 @@ export default function Intro() {
                 }}
             >
                 <Link href="#contact" 
-                className="group bg-gray-800 text-white px-7 py-3 flex items-center gap-2 outline-none
+                className="group bg-white/10 text-white px-7 py-3 flex items-center gap-2 outline-none
                 focus:scale-110 hover:scale-110
-                hover:bg-gray-800 active:scale-105
+                hover:bg-white/10 active:scale-105
                 transition"
                 onClick={() => {
                     setActiveSection("Contact")
@@ -73,7 +73,8 @@ export default function Intro() {
                 focus:scale-110 hover:scale-110
                 active:scale-105
                 transition
-                cursor-pointer borderBlack"
+                cursor-pointer borderBlack
+                dark:bg-white/10"
                 href="/CV.pdf" download={true}>
                     Download CV <HiDownload
                     className="opacity-60"
