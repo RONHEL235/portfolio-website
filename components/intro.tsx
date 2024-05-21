@@ -17,7 +17,7 @@ export default function Intro() {
         <section
         ref={ref}
         id="home" 
-        className="scroll-mt-[100rem] absolute top-28 text-center mb-30 max-w-[50rem]">
+        className="scroll-mt-[100rem] absolute top-[9.3rem] text-center mb-30 max-w-[50rem]">
             <div className="flex items-center justify-center">
                 <div className="relative">
                     <motion.div
@@ -58,16 +58,17 @@ export default function Intro() {
                 }}
             >
                 <Link href="#contact" 
-                className="group bg-white/10 text-white px-7 py-3 flex items-center gap-2 outline-none
+                className="group bg-white px-7 py-3 flex items-center gap-2 outline-none
                 focus:scale-110 hover:scale-110
-                hover:bg-white/10 active:scale-105
-                transition"
+                hover:bg-white active:scale-105
+                transition
+                dark:bg-white/10"
                 onClick={() => {
                     setActiveSection("Contact")
                     setTimeOfLastClick(Date.now())
                 }}>
                     Contact me here <BsArrowRight 
-                    className="opacity-70 group-hover:translate-x-1 transition"/>
+                    className="opacity-60 group-hover:translate-x-1 transition"/>
                 </Link>
                 <a className="group bg-white px-7 py-3 flex items-center gap-2 outline-none
                 focus:scale-110 hover:scale-110
@@ -83,14 +84,16 @@ export default function Intro() {
                 <a className="bg-white p-4 text-gray-800 flex items-center gap-2 focus:scale-110 hover:scale-110
                 active:scale-105
                 transition
-                cursor-pointer borderBlack"
+                cursor-pointer borderBlack
+                dark:bg-white/10 dark:text-white/95"
                 href="https://linkedin.com" target="_blank">
                     <BsLinkedin/>
                 </a>
                 <a className="bg-white p-4 text-gray-800 flex items-center gap-2 text-[1.3rem] focus:scale-110 hover:scale-110
                 active:scale-105
                 transition
-                cursor-pointer borderBlack"
+                cursor-pointer borderBlack
+                dark:bg-white/10 dark:text-white/95"
                 href="https://github.com" target="_blank">
                     <FaGithubSquare/>
                 </a>
