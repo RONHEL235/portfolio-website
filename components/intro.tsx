@@ -35,7 +35,7 @@ export default function Intro() {
                         height="150"
                         quality="92"
                         priority={true}
-                        className="border-cover border-[0.2rem] border-white"
+                        className="border-cover border-[0.2rem] border-white dark:border-white/40"
                         />
                     </motion.div>
                 </div>
