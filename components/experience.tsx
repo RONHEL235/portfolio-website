@@ -7,7 +7,8 @@ import "react-vertical-timeline-component/style.min.css"
 import { useSectionInView } from '@/lib/hooks'
 
 export default function Experience() {
-    const {ref } = useSectionInView("Experience", 0.65)
+    const { ref } = useSectionInView("Experience", 0.65)
+    useTheme
 
   return (
     <section 
