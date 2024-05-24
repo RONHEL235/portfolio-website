@@ -30,10 +30,10 @@ export default function Contact() {
     >
     <div className="text-3xl font-medium capitalize mb-8 text-center">Contact me</div>
     <p 
-      className="text-gray-700 -mt-2" >Please contact me directly{" "}<a className="underline" href="mailto:roneehelepi70@gmail.com">roneehelepi70@gmail.com</a>{" "}or through this form.
+      className="text-gray-700 -mt-2 dark:text-white/80" >Please contact me directly{" "}<a className="underline" href="mailto:roneehelepi70@gmail.com">roneehelepi70@gmail.com</a>{" "}or through this form.
     </p>
     <form 
-      className="mt-10 flex flex-col"
+      className="mt-10 flex flex-col dark:text-black/80"
       action={async (formData) => {
       const { data, error } = await sendEmail(formData)
 
@@ -44,16 +44,22 @@ export default function Contact() {
       
       toast.success("Email sent successfully!")
     }}>
-      <input 
-        className="h-14 rounded-lg borderBlack"
-        name="senderEmail" 
-        type="email"
-        required={true}
-        maxLength={500}
-        placeholder="    Your email" 
-      />
+    <input 
+      className="h-14 my-3 rounded-lg borderBlack p-4
+      dark:bg-white dark:bg-opacity-80
+      dark:focus:bg-opacity-100 transition-all
+      dark:outline-none"
+      name="senderEmail" 
+      type="email"
+      required={true}
+      maxLength={500}
+      placeholder="Your email" 
+    />
     <textarea 
-      className="h-52 my-3 rounded-lg borderBlack p-4"
+      className="h-52 rounded-lg borderBlack p-4
+      dark:bg-white dark:bg-opacity-80
+      dark:focus:bg-opacity-100 transition-all
+      dark:outline-none"
       name="message"
       placeholder="Your message"
       required={true}
