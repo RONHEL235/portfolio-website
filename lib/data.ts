@@ -2,7 +2,7 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
+import TheMidnightPodcast from "@/The Midnight Podcast.PNG";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 
@@ -74,7 +74,7 @@ export const projectsData = [
     description:
       "This was my final capstone project during my bootcamp at Codespace Academy, the experience was too exiting and I learned ,so much, .",
     tags: ["React", "Javascript", "HTML", "CSS"],
-    imageUrl: corpcommentImg,
+    image: TheMidnightPodcast,
   },
   {
     title: "instascape",
