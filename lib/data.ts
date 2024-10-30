@@ -2,7 +2,7 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import theMidnightPodcast from "@/public/";
+import theMidnightPodcast from "@/public/The_Midnight_Podcast.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 
@@ -74,13 +74,13 @@ export const projectsData = [
     description:
       "This was my final capstone project during my bootcamp at Codespace Academy, the experience was too exiting and I learned ,so much, .",
     tags: ["React", "Javascript", "HTML", "CSS"],
-    image: theMidnightPodcast,
+    imageUrl: theMidnightPodcast,
   },
   {
     title: "instascape",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "I don't know man, I just wanted to understand how the app that I am so addicted to is made. This is just an instagram clone, nothing less nothing more. Cool application though. ",
+    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Apprite"],
     imageUrl: rmtdevImg,
   },
   {
