@@ -2,8 +2,8 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import theMidnightPodcast from "@/public/The_Midnight_Podcast.png";
-import instascape from "@/public/Instascape.png";
+import theMidnightPodcast from "@/public/midnightpodcast.png";
+import instascape from "@/public/instascape.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 
 export const links = [
@@ -81,7 +81,7 @@ export const projectsData = [
     description:
       "I don't know man, I just wanted to understand how the app that I am so addicted to is made. This is just an instagram clone, nothing less nothing more. Cool application though. ",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Apprite"],
-    imageUrl: rmtdevImg,
+    imageUrl: instascape,
   },
   {
     title: "Word Analytics",
