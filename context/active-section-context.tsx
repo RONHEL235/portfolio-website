@@ -45,4 +45,5 @@ export function useActiveSectionContext() {
         )
     }
     return context
+    // Returns the context value, allowing components to use and update `activeSection` and `timeOfLastClick`.
 }
