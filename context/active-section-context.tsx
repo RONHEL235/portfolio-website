@@ -39,6 +39,7 @@ export function useActiveSectionContext() {
     // Retrieves the context value via `useContext`. 
 
     if (context === null) {
+        // Throws an error if `useActiveSectionContext` is used outside the provider, ensuring context is only accessed within its provider.
         throw new Error(
             "useActiveSectionContext must be used within an ActiveSectionContextProvider"
         )
