@@ -34,6 +34,7 @@ export default function ActiveSectionContextProvider({ children }: ActiveSection
 }
 
 export function useActiveSectionContext() {
+    // Defines a custom hook `useActiveSectionContext` for easily accessing the context in other components.
     const context = useContext(ActiveSectionContext)
 
     if (context === null) {
