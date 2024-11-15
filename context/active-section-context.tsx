@@ -1,6 +1,7 @@
 "use client"
 
 import type { SectionName } from '@/lib/types'
+// Imports the `SectionName` type, likely a TypeScript union type or string type for specific section names (e.g., "Home", "About").
 import React, {useState, createContext, useContext} from 'react'
 
 type ActiveSectionContextProviderProps = {
