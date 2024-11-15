@@ -11,6 +11,8 @@ type ActiveSectionContextProviderProps = {
 }
 // Defines TypeScript type for props of the `ActiveSectionContextProvider` component, where `children` represents any nested components.
 
+
+// Defines a TypeScript type for the shape of the context's value.
 type ActiveSectionContextType = {
     activeSection: SectionName
     setActiveSection: React.Dispatch<React.SetStateAction<SectionName>>
