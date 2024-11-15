@@ -2,7 +2,9 @@
 
 import type { SectionName } from '@/lib/types'
 // Imports the `SectionName` type, likely a TypeScript union type or string type for specific section names (e.g., "Home", "About").
+
 import React, {useState, createContext, useContext} from 'react'
+// Imports React and specific hooks: `useState` for managing component state, `createContext` to create a context for the active section, and `useContext` for consuming that context.
 
 type ActiveSectionContextProviderProps = {
     children: React.ReactNode
