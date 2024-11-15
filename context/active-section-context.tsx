@@ -9,6 +9,7 @@ import React, {useState, createContext, useContext} from 'react'
 type ActiveSectionContextProviderProps = {
     children: React.ReactNode
 }
+// Defines TypeScript type for props of the `ActiveSectionContextProvider` component, where `children` represents any nested components.
 
 type ActiveSectionContextType = {
     activeSection: SectionName
