@@ -25,7 +25,9 @@ export default function ThemeContextProvider({
     children
 }: ThemeContextProviderProps) {
     const [theme, setTheme] = useState<Theme>("light") 
-  
+
+    // Toggles the theme to "dark", stores it in localStorage, and applies a CSS class to the <html>.
+    
     const toggleTheme = () => {
       if (theme === "light") {
           setTheme("dark")
