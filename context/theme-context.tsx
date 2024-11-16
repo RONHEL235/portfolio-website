@@ -33,7 +33,7 @@ export default function ThemeContextProvider({
           setTheme("dark")
           window.localStorage.setItem("theme", "dark")
           document.documentElement.classList.add("dark")
-           
+
       // Toggles the theme to "light", updates localStorage, and removes the CSS class from the <html>.
 
       } else {
@@ -42,7 +42,8 @@ export default function ThemeContextProvider({
           document.documentElement.classList.remove("dark")
       }
     }
-  
+    
+    // Retrieves the stored theme from localStorage, casting it to the `Theme` type.
     useEffect(() => {
       const localTheme = window.localStorage.getItem("theme") as Theme | null
   
