@@ -50,7 +50,8 @@ export default function ThemeContextProvider({
       // If a theme is found in localStorage, update the state with it.
       if (localTheme) {
           setTheme(localTheme)
-  
+          
+      // Ensures the "dark" theme class is applied if the theme is "dark".  
           if (localTheme === "dark") {
               document.documentElement.classList.add("dark")
           }
