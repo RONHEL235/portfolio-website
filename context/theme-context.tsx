@@ -8,6 +8,8 @@ type ThemeContextProviderProps = {
     children: React.ReactNode
 }
 
+// Defining the shape of the context data that will be shared: a `theme` string and a `toggleTheme` function.
+
 type ThemeContextType = {
     theme: Theme,
     toggleTheme: () => void,
