@@ -15,6 +15,8 @@ type ThemeContextType = {
     toggleTheme: () => void,
 }
 
+// Creating the context with an initial value of null. This context will hold the theme and toggle function.
+
 const ThemeContext = createContext<ThemeContextType | null>(null)
 
 export default function ThemeContextProvider({
