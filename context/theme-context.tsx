@@ -42,11 +42,12 @@ export default function ThemeContextProvider({
           document.documentElement.classList.remove("dark")
       }
     }
-    
+
     // Retrieves the stored theme from localStorage, casting it to the `Theme` type.
     useEffect(() => {
       const localTheme = window.localStorage.getItem("theme") as Theme | null
-  
+      
+      // If a theme is found in localStorage, update the state with it.
       if (localTheme) {
           setTheme(localTheme)
   
