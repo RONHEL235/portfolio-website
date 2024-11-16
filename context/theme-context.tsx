@@ -27,12 +27,15 @@ export default function ThemeContextProvider({
     const [theme, setTheme] = useState<Theme>("light") 
 
     // Toggles the theme to "dark", stores it in localStorage, and applies a CSS class to the <html>.
-    
+
     const toggleTheme = () => {
       if (theme === "light") {
           setTheme("dark")
           window.localStorage.setItem("theme", "dark")
-          document.documentElement.classList.add("dark") 
+          document.documentElement.classList.add("dark")
+           
+      // Toggles the theme to "light", updates localStorage, and removes the CSS class from the <html>.
+
       } else {
           setTheme("light")
           window.localStorage.setItem("theme", "light")
