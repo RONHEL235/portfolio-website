@@ -19,6 +19,8 @@ type ThemeContextType = {
 
 const ThemeContext = createContext<ThemeContextType | null>(null)
 
+// Main provider component for the theme context, wrapping its children with the shared context value.
+
 export default function ThemeContextProvider({
     children
 }: ThemeContextProviderProps) {
