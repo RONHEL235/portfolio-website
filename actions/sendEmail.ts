@@ -7,6 +7,7 @@ import ContactFormEmail from "@/email/contact-form-email"
 // Initializes a Resend instance using the API key from environment variables.
 const resend = new Resend(process.env.RESEND_API_KEY)
 
+// Retrieves the `senderEmail` field from the submitted form data.
 export const sendEmail = async (formData: FormData) => {
   const senderEmail = formData.get("senderEmail")
   const message = formData.get("message")
