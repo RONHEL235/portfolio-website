@@ -14,6 +14,7 @@ export function useSectionInView(sectionName: SectionName, threshold = 0.99) {
       // Retrieves `setActiveSection` to update the active section and `timeOfLastClick` to avoid rapid updates
       const { setActiveSection, timeOfLastClick } = useActiveSectionContext()
     
+      // Effect to update the active section only if the element is in view and a set time has passed since the last click
       useEffect(() => {
         if (inView && Date.now() - timeOfLastClick > 1000) {
         setActiveSection(sectionName)
