@@ -4,6 +4,8 @@ import { useInView } from "react-intersection-observer"
 import { SectionName } from "./types"
 
 export function useSectionInView(sectionName: SectionName, threshold = 0.99) {
+
+  // `useInView` provides a `ref` to attach to the element and tracks whether it's in view
     const { ref, inView } = useInView({
         threshold,
       })
