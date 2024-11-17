@@ -4,6 +4,7 @@ import { validateString, getErrorMessage } from "@/lib/utils"
 import { Resend } from "resend"
 import ContactFormEmail from "@/email/contact-form-email"
 
+// Initializes a Resend instance using the API key from environment variables.
 const resend = new Resend(process.env.RESEND_API_KEY)
 
 export const sendEmail = async (formData: FormData) => {
