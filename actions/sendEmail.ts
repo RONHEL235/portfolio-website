@@ -27,6 +27,7 @@ export const sendEmail = async (formData: FormData) => {
   let data
 
   try {
+    // Attempt to send an email using the Resend email API.
     data = await resend.emails.send({
       from: "Contact Form <onboarding@resend.dev>",
       to: "roneehelepi70@gmail.com",
