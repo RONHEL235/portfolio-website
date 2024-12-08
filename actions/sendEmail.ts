@@ -35,6 +35,7 @@ export const sendEmail = async (formData: FormData) => {
       reply_to: senderEmail as string,
       // The 'react' property defines the React component used to render the email's content.
       react: React.createElement(ContactFormEmail, {
+        // Pass the message and sender's email to the React component.
         message: message as string,
         senderEmail: senderEmail as string,
       })
