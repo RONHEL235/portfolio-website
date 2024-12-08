@@ -41,6 +41,7 @@ export const sendEmail = async (formData: FormData) => {
       })
     })
   } catch (error: unknown) {
+    // If an error occurs while sending the email, handle it gracefully.
     return {
       error: getErrorMessage(error),
     }
