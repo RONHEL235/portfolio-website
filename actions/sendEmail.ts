@@ -23,8 +23,9 @@ export const sendEmail = async (formData: FormData) => {
       error: "Invalid message"
     }
   } 
-
+  //Declare a variable to store the response data from the email-sending operation.
   let data
+
   try {
     data = await resend.emails.send({
       from: "Contact Form <onboarding@resend.dev>",
