@@ -29,6 +29,7 @@ export const sendEmail = async (formData: FormData) => {
   try {
     // Attempt to send an email using the Resend email API.
     data = await resend.emails.send({
+      // The 'from' field specifies the sender's details for the email.
       from: "Contact Form <onboarding@resend.dev>",
       to: "roneehelepi70@gmail.com",
       subject: "Message from contact form",
