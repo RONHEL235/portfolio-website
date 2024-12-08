@@ -46,6 +46,7 @@ export const sendEmail = async (formData: FormData) => {
       error: getErrorMessage(error),// Extract a readable error message from the error object.
     }
   }
+  // If email sending succeeds, return the response data.
    return {
     data,
    } 
