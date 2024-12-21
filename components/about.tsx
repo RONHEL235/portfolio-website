@@ -18,26 +18,13 @@ export default function About() {
     >
         <h2 className="text-3xl font-semibold capitalize mb-8">About me</h2>
         <p className="mb-3">
-        After my incomplete 4 year tenure at {" "}
-        <span className="font-semibold">UCT - BSc Geomatics (Land Surveying) </span>due to financial exclusion, I decided to pursue my
-        passion for programming and enrolled in a coding bootcamp called CodeSpace and learned{" "}
-        <span className="font-semibold">Front-End Software development</span>.{" "}
+        <span className="font-semibold">I am a problem-solving enthusiast who swapped surveying the land for surveying code.{" "}After an incomplete BSc Geomatics (Geographical Information Systems) turnure at UCT, life redirected me to what I love most — programming. I dove into a coding bootcamp at CodeSpace Academy, mastering the art of Front-End Software Development with tools like JavaScript, React.js, Tailwind CSS, and Node.js (plus a splash of TypeScript). </span>{" "}
         </p>
         <p>
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-semibold">Tailwind CSS, JavaScript, React.js and Node.js. </span>
-        I am also familiar with 
-        <span className="font-semibold"> TypeScript. </span>
-        Presently I am in my first year pursuing a 
-        <span className="font-semibold"> BSc in IT specializing in Software Engineering at EDUVOS. </span> 
-        I am currently looking for a{" "}
-        <span className="font-semibold">internship position as a Front-End software developer.</span>
+        <span className="font-semibold">Now, I am pursuing a BSc in IT specializing in Software Engineering at EDUVOS and am on the hunt for a Software Developer internship where I can put my skills (and wit) to good use. </span>
         </p>
         <p className="mt-5">
-        <span className="italic">When I'm not coding</span>, I like to delve into a good fictional read or personal writing. <span className="font-semibold">I love learning and constantly seeking out challenges and opportunities that aid my personal and intellectual growth.</span> 
+        <span className="font-semibold">When I am not debugging, you will find me lost in a fictional universe or scribbling down thoughts—always curious, always learning, and always up for a challenge.</span> 
         </p>    
     </motion.section>
   )
