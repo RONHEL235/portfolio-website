@@ -69,24 +69,24 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "MidNight Podcast",
+    title: "Instascape", 
     description:
-      "This was my final capstone project during my bootcamp at Codespace Academy, the experience was too exiting and I learned ,so much, .",
+      "Instascape is a photo-sharing app with editing tools, filters, and social features for sharing and discovering content.",
+    tags: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Apprite"],
+    imageUrl: instascape,
+  },
+  {
+    title: "The MidNight Podcast",
+    description:
+      "The Midnight Podcast app offers personalized podcast recommendations, offline listening, and social features for sharing and engagement.",
     tags: ["React", "Javascript", "HTML", "CSS"],
     imageUrl: midnightpodcast,
   },
   {
-    title: "instascape",
-    description:
-      "I don't know man, I just wanted to understand how the app that I am so addicted to is made. This is just an instagram clone, nothing less nothing more. Cool application though. ",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Apprite"],
-    imageUrl: instascape,
-  },
-  {
-    title: "Word Analytics",
+    title: "Book Connect",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+    tags: ["Javascript", "CSS", "HTML"],
     imageUrl: instascape,
   },
 ] as const;
