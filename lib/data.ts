@@ -85,7 +85,7 @@ export const projectsData = [
   {
     title: "Book Connect",
     description:
-      "Book Connect is an app designed for discovering and exploring books with ease. Users can browse and search for books based on genre or author, making it simple to find their next read. The app also includes light and dark mode options, allowing for a personalized and comfortable browsing experience",
+      "Book Connect helps users discover books through genre and author searches, making exploration simple and intuitive. It also features light and dark modes for a comfortable browsing experience.",
     tags: ["Javascript", "CSS", "HTML"],
     imageUrl: instascape,
   },
