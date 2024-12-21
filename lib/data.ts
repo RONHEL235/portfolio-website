@@ -78,14 +78,14 @@ export const projectsData = [
   {
     title: "The MidNight Podcast",
     description:
-      "The Midnight Podcast app offers personalized podcast recommendations, offline listening, and social features for sharing and engagement.",
+      "With Midnight Podcast, you can listen to shows, browse content, and save your favorite episodes.",
     tags: ["React", "Javascript", "HTML", "CSS"],
     imageUrl: midnightpodcast,
   },
   {
     title: "Book Connect",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+      "Book Connect is an app designed for discovering and exploring books with ease. Users can browse and search for books based on genre or author, making it simple to find their next read. The app also includes light and dark mode options, allowing for a personalized and comfortable browsing experience",
     tags: ["Javascript", "CSS", "HTML"],
     imageUrl: instascape,
   },
