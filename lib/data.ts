@@ -4,6 +4,7 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import midnightpodcast from "@/public/midnightpodcast.png";
 import instascape from "@/public/instascape.png";
+import bookconnect from "@/public/bookconnect.png"; 
 
 export const links = [
   {
@@ -39,7 +40,7 @@ export const experiencesData = [
     description:
       "Incomplete 4 year tenure.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019 - 2022",
+    date: "2019 - 2022 ",
   },
   {
     title: "Graduated CodeSpace Bootcamp",
@@ -47,7 +48,7 @@ export const experiencesData = [
     description:
       "Graduated after 6 months/ 500 hours of a comprehensive Front-End Software Development program.",
     icon: React.createElement(LuGraduationCap),
-    date: "2023",
+    date: "2023 ",
   },
   {
     title: "Front-End Developer Virtual Internship",
@@ -55,7 +56,7 @@ export const experiencesData = [
     description:
       "I worked as a front-end developer for 1 month. Created software projects for up skilling and experience.",
     icon: React.createElement(CgWorkAlt),
-    date: "2024",
+    date: "2024 ",
   },
   {
     title: "BSc IT - Software Engineering specialization",
@@ -63,7 +64,7 @@ export const experiencesData = [
     description:
       "Currently in my first year enrolled.",
     icon: React.createElement(LuGraduationCap),
-    date: "2024 - present",
+    date: "2024 - present ",
   },
 ] as const;
 
@@ -87,7 +88,7 @@ export const projectsData = [
     description:
       "Book Connect helps users discover books through genre and author searches, making exploration simple and intuitive. It also features light and dark modes for a comfortable browsing experience.",
     tags: ["Javascript", "CSS", "HTML"],
-    imageUrl: instascape,
+    imageUrl: bookconnect,
   },
 ] as const;
 
