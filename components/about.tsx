@@ -17,15 +17,19 @@ export default function About() {
     id="about"
     >
         <h2 className="text-3xl font-semibold capitalize mb-8">About me</h2>
+
         <p className="mb-3">
-        <span className="font-semibold">I am a problem-solving enthusiast who swapped surveying the land for surveying code.{" "}After an incomplete BSc Geomatics (Geographical Information Systems) turnure at UCT, life redirected me to what I love most — programming. I dove into a coding bootcamp at CodeSpace Academy, mastering the art of Front-End Software Development with tools like JavaScript, React.js, Tailwind CSS, and Node.js (plus a splash of TypeScript). </span>{" "}
+        <span className="font-semibold">I'm a problem-solving enthusiast who swapped surveying the land for surveying code.{" "}After an incomplete BSc Geomatics (Geographical Information Systems) turnure at UCT, life redirected me to what I love most — programming. I dove into a coding bootcamp at CodeSpace Academy, mastering the art of Front-End Software Development with tools like JavaScript, React.js, Tailwind CSS, and Node.js (plus a splash of TypeScript). </span>{" "}
         </p>
+
         <p>
-        <span className="font-semibold">Now, I am pursuing a BSc in IT specializing in Software Engineering at EDUVOS and am on the hunt for a Software Developer internship where I can put my skills (and wit) to good use. </span>
+        <span className="font-semibold">Now, I'm pursuing a BSc in IT specializing in Software Engineering at EDUVOS and am on the hunt for a Software Developer internship where I can put my skills (and wit) to good use. </span>
         </p>
+
         <p className="mt-5">
-        <span className="font-semibold">When I am not debugging, you will find me lost in a fictional universe or scribbling down thoughts—always curious, always learning, and always up for a challenge.</span> 
-        </p>    
+        <span className="font-semibold">When I'm not debugging, you will find me lost in a fictional universe or scribbling down thoughts—always curious, always learning, and always up for a challenge.</span> 
+        </p>   
+         
     </motion.section>
   )
 }

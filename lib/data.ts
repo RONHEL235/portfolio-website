@@ -4,7 +4,9 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import midnightpodcast from "@/public/midnightpodcast.png";
 import instascape from "@/public/instascape.png";
-import bookconnect from "@/public/bookconnect.png"; 
+import bookconnect from "@/public/bookconnect.png";
+import french from "@/public/French[2].jpg";
+ 
 
 export const links = [
   {
@@ -35,36 +37,43 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "BSc Geomatics (Land Surveying) - Incomplete",
+    title: "BSc Geomatics (Geographical Information Systems) - Incomplete",
     location: "University of Cape Town",
     description:
-      "Incomplete 4 year tenure.",
+      "I studied Geomatics (Geographical Information Systems) for 2 years before deciding to pursue a career in Software Engineering.", 
     icon: React.createElement(LuGraduationCap),
-    date: "2019 - 2022 ",
+    date: " - ",
   },
   {
-    title: "Graduated CodeSpace Bootcamp",
+    title: "Graduated CodeSpace Academy Bootcamp",
     location: "Cape Town",
     description:
       "Graduated after 6 months/ 500 hours of a comprehensive Front-End Software Development program.",
     icon: React.createElement(LuGraduationCap),
-    date: "2023 ",
+    date: "June 2023 - December 2023",
   },
   {
-    title: "Front-End Developer Virtual Internship",
-    location: "CODSOFT",
+    title: "Software Developer Intern",
+    location: "CODSOFT - Remote",
     description:
-      "I worked as a front-end developer for 1 month. Created software projects for up skilling and experience.",
+      "Developed, and tested applications using React.js, JavaScript, TailwindCSS. Debugging and Troubleshooting: Identified and resolved bugs and performance issues to ensure optimal application performance.",
     icon: React.createElement(CgWorkAlt),
-    date: "2024 ",
+    date: "January 2024 - February 2024 ",
   },
   {
     title: "BSc IT - Software Engineering specialization",
     location: "EDUVOS",
-    description:
-      "Currently in my first year enrolled.",
+    description: "1st year studying Software Engineering at EDUVOS. Top 10 Acheiver Bloemfontein Campus *. Golden Key International Honour Society Member *. SRC: Clubs and Societies (2025 turnure)",
     icon: React.createElement(LuGraduationCap),
     date: "2024 - present ",
+  },
+  {
+    title: "AI Engagement Analyst Intern",
+    location: "EXELERATE - Remote",
+    description:
+      "Analyzed AI engagement data and provided insights to improve user engagement. Analyzed trends in student engagement and visualized key insights using Python libraries [TensorFlow, PyTorch, Pandas, Matplotlib]. Star Performer Badge*.",
+    icon: React.createElement(LuGraduationCap),
+    date: "October 2024 - November 2024",
   },
 ] as const;
 
@@ -89,6 +98,13 @@ export const projectsData = [
       "Book Connect helps users discover books through genre and author searches, making exploration simple and intuitive. It also features light and dark modes for a comfortable browsing experience.",
     tags: ["Javascript", "CSS", "HTML"],
     imageUrl: bookconnect,
+  },
+  {
+    title: "Who the French do you think you are? [Book]",
+    description:
+      "Take a tour inside the mind of a polymath, and discover the secrets of madness.",
+    tags: ["Microsoft Word", "English"], 
+    imageUrl: french,
   },
 ] as const;
 
