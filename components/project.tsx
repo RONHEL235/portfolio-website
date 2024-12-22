@@ -7,7 +7,7 @@ import Image from "next/image";
 
 type ProjectProps = (typeof projectsData)[number];
 
-export default function Project({ title, description, tags, imageUrl }: ProjectProps) {
+export default function Project({ title, description, tags, imageUrl, link }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null)
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -25,7 +25,9 @@ export default function Project({ title, description, tags, imageUrl }: ProjectP
         }}
         className="group mb-3 sm:mb-8 last:mb-0 "
         >
-        <section  
+
+        <a href={link} target="_blank" rel="noopener noreferrer"> 
+        <section 
         className="bg-gray-100 max-w-[42rem] border border-black/10 overflow-hidden sm:pr-8 relative sm:h-[20rem] mb-3 sm:mb-8 last:mb-0  hover:bg-gray-300 transition sm:group-even:pl-[3.5rem] dark dark:bg-white/10 dark:hover:bg-white/20">
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
         <h3 className="text-2xl font-semibold">{title}</h3>
@@ -55,5 +57,6 @@ export default function Project({ title, description, tags, imageUrl }: ProjectP
         group-even:-left-40" 
     />
   </section>
+  </a>
 </motion.div>    
 )}

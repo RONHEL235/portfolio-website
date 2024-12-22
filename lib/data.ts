@@ -89,7 +89,7 @@ export const projectsData = [
     title: "The MidNight Podcast",
     description:
       "With Midnight Podcast, you can listen to shows, browse content, and save your favorite episodes.",
-    tags: ["React", "Javascript", "HTML", "CSS"],
+    tags: ["React", "Vite", "Javascript", "HTML", "CSS"],
     imageUrl: midnightpodcast,
   },
   {
@@ -100,7 +100,7 @@ export const projectsData = [
     imageUrl: bookconnect,
   },
   {
-    title: "Who the French do you think you are? [Book]",
+    title: "Who the French do you think you are? [Literary Project]",
     description:
       "Take a tour inside the mind of a polymath, and discover the secrets of madness.",
     tags: ["Microsoft Word", "English"], 
@@ -119,4 +119,5 @@ export const skillsData = [
   "Node.js",
   "Git",
   "Framer Motion",
+  "Python",
 ] as const;

@@ -97,7 +97,7 @@ export default function Intro() {
                 transition
                 cursor-pointer borderBlack
                 dark:bg-white/10 dark:text-white/95"
-                href="https://github.com" target="_blank">
+                href="https://github.com/RONHEL235" target="_blank">
                     <FaGithubSquare/>
                 </a>
             </motion.div>
