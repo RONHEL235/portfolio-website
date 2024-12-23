@@ -4,9 +4,10 @@ const nextConfig = {
       serverActions: {},
     },
     webpack: (config) => {
-      config.resolve.alias['@'] = "./"; // Set '@' to the root directory
+      config.resolve.alias['@'] = __dirname; // Set '@' to point to the root directory
       return config;
     },
   };
   
   module.exports = nextConfig;
+  
