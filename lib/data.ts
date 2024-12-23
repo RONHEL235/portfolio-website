@@ -2,10 +2,10 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import midnightpodcast from "@/public/midnightpodcast.png";
-import instascape from "@/public/instascape.png";
-import bookconnect from "@/public/bookconnect.png";
-import french from "@/public/French[2].jpg";
+import midnightpodcast from "public/midnightpodcast.png";
+import instascape from "public/instascape.png";
+import bookconnect from "public/bookconnect.png";
+import french from "public/French[2].jpg";
 import { link } from "fs";
  
 
