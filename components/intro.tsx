@@ -89,7 +89,7 @@ export default function Intro() {
                 transition
                 cursor-pointer borderBlack
                 dark:bg-white/10 dark:text-white/95"
-                href="https://linkedin.com" target="_blank">
+                href="www.linkedin.com/in/ronee-helepi-a25407343" target="_blank">
                     <BsLinkedin/>
                 </a>
                 <a className="bg-white p-4 text-gray-800 flex items-center gap-2 text-[1.3rem] focus:scale-110 hover:scale-110

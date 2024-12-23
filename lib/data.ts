@@ -6,6 +6,7 @@ import midnightpodcast from "@/public/midnightpodcast.png";
 import instascape from "@/public/instascape.png";
 import bookconnect from "@/public/bookconnect.png";
 import french from "@/public/French[2].jpg";
+import { link } from "fs";
  
 
 export const links = [
@@ -40,7 +41,7 @@ export const experiencesData = [
     title: "BSc Geomatics (Geographical Information Systems) - Incomplete",
     location: "University of Cape Town",
     description:
-      "I studied Geomatics (Geographical Information Systems) for 2 years before deciding to pursue a career in Software Engineering.", 
+      "I studied Geomatics (Geographical Information Systems) for 3 years before deciding to pursue a career in Software Engineering.", 
     icon: React.createElement(LuGraduationCap),
     date: " - ",
   },
@@ -63,7 +64,7 @@ export const experiencesData = [
   {
     title: "BSc IT - Software Engineering specialization",
     location: "EDUVOS",
-    description: "1st year studying Software Engineering at EDUVOS. Top 10 Acheiver Bloemfontein Campus *. Golden Key International Honour Society Member *. SRC: Clubs and Societies (2025 turnure)",
+    description: "1st year studying Software Engineering at EDUVOS. Top 10 Acheiver Bloemfontein Campus *. SRC: Clubs and Societies (2025 turnure)",
     icon: React.createElement(LuGraduationCap),
     date: "2024 - present ",
   },
@@ -84,13 +85,15 @@ export const projectsData = [
       "Instascape is a photo-sharing app with editing tools, filters, and social features for sharing and discovering content.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Apprite"],
     imageUrl: instascape,
-  },
+    link: "https://superlative-otter-0b4d14.netlify.app/",  
+    },
   {
     title: "The MidNight Podcast",
     description:
       "With Midnight Podcast, you can listen to shows, browse content, and save your favorite episodes.",
     tags: ["React", "Vite", "Javascript", "HTML", "CSS"],
     imageUrl: midnightpodcast,
+    link: "https://the-midnight-podcast-app.vercel.app/",
   },
   {
     title: "Book Connect",
@@ -98,6 +101,7 @@ export const projectsData = [
       "Book Connect helps users discover books through genre and author searches, making exploration simple and intuitive. It also features light and dark modes for a comfortable browsing experience.",
     tags: ["Javascript", "CSS", "HTML"],
     imageUrl: bookconnect,
+    link: "https://book-connect-phi.vercel.app/",
   },
   {
     title: "Who the French do you think you are? [Literary Project]",
@@ -105,6 +109,7 @@ export const projectsData = [
       "Take a tour inside the mind of a polymath, and discover the secrets of madness.",
     tags: ["Microsoft Word", "English"], 
     imageUrl: french,
+    link: "https://www.dropbox.com/scl/fi/k8xr4iy3g34mb6ofixk5q/Who-the-ef-do-you-think-you-are.pdf?rlkey=i5wy7w4i6u6i4az5qhuwwid48&st=bof3pn67&dl=0",
   },
 ] as const;
 
