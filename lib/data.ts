@@ -105,7 +105,7 @@ export const projectsData: Project[] = [
     description:
       "Instascape is a photo-sharing app with editing tools, filters, and social features, built with Next.js for scalability and Tailwind CSS for responsive design.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Appwrite"],
-    imageUrl: "/instascape[2].png",
+    imageUrl: "/instascape[4].png",
     link: "https://instascape.vercel.app/",
   },
   {
