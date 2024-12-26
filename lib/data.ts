@@ -133,7 +133,7 @@ export const projectsData: Project[] = [
       "A creative literary project exploring the mind of a polymath and the secrets of madness.",
     tags: ["Microsoft Word", "English"],
     imageUrl: "/French[2].jpg",
-    link: "https://www.dropbox.com/scl/fi/tl1lnx4ityfp5wi5nm800/Who-the-French-do-you-think-you-are.pdf?rlkey=2sghvv222anla9vbekko3eunr&st=2kyn3vlm&dl=0",
+    link: "https://www.dropbox.com/scl/fi/tl1lnx4ityfp5wi5nm800/Who-the-French-do-you-think-you-are.pdf?rlkey=2sghvv222anla9vbekko3eunr&st=x7twmmft&dl=0",
   },
 ];
 
