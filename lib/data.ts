@@ -110,6 +110,15 @@ export const projectsData: Project[] = [
   },
   {
     id: "proj-2",
+    title: "Sagittarius",
+    description:
+      "Gemini but better. Sagittarius is a generative AI app offering users a powerful tool for interactive and creative conversations.",
+    tags: ["React", "Vite", "Javascript", "HTML", "CSS"],
+    imageUrl: "/sagittarius.png",
+    link: "https://sagittarius-lime.vercel.app/",
+  },
+  {
+    id: "proj-3",
     title: "The MidNight Podcast",
     description:
       "Instascape is a photo-sharing app with editing tools, filters, and social features, built with Next.js and Tailwind CSS.",
@@ -118,16 +127,16 @@ export const projectsData: Project[] = [
     link: "https://the-midnight-podcast-app.vercel.app/",
   },
   {
-    id: "proj-3",
+    id: "proj-4",
     title: "Book Connect",
     description:
-      "Book Connect helps users discover books through genre and author searches, making exploration simple and intuitive. Features include light and dark modes for a comfortable browsing experience.",
+      "Book Connect helps users discover books through genre and author searches. Features include light and dark modes for a comfortable browsing experience.",
     tags: ["JavaScript", "CSS", "HTML"],
     imageUrl: "/bookconnect.png",
     link: "https://book-connect-phi.vercel.app/",
   },
   {
-    id: "proj-4",
+    id: "proj-5",
     title: "Who the French do you think you are? [Literary Project]",
     description:
       "A creative literary project exploring the mind of a polymath and the secrets of madness.",
@@ -145,7 +154,7 @@ export interface Skills {
 }
 
 export const skillsData: Skills = {
-  frontend: ["React", "Next.js", "JavaScript", "HTML", "Tailwind CSS", "Framer Motion"],
+  frontend: ["React", "Next.js", "JavaScript", "HTML", "CSS", "Tailwind CSS", "Framer Motion"],
   backend: ["Node.js", "Python"],
   tools: ["Git", "TypeScript"],
 };
